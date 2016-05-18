@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.*.swp
+.idea
+config.json
+npm-debug.log
+npm-debug.log.*
+dump.rdb
+cdn
+config/
+.vscode/
