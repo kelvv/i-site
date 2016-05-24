@@ -1,5 +1,5 @@
 const app = require('../app');
 const env = require('../config/env');
 
-console.log('--------------Server on 3000---------------------');
+console.log(`--------------Server on ${env.PORT}---------------------`);
 app.listen(env.PORT);
