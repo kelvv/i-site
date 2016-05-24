@@ -1,0 +1,33 @@
+{
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+
+    // First application
+    {
+      name      : "my-site",
+      script    : "bin/run.js",
+      env: {
+
+      }
+    }
+
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  deploy : {
+    dev : {
+      user : "root",
+      host : "133.130.96.233",
+      ref  : "origin/master",
+      repo : "https://github.com/kelvv/my-site.git",
+      path : "/root",
+      "post-deploy" : "npm install ; pm2 startOrRestart ecosystem.json --env dev"
+    }
+  }
+}
