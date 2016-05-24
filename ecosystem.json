@@ -28,7 +28,7 @@
       ref  : "origin/master",
       repo : "https://github.com/kelvv/my-site.git",
       path : "/root",
-      "post-deploy" : "ls"
+      "post-deploy" : ". ./post-init.sh"
     }
   }
 }
