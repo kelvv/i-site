@@ -28,7 +28,7 @@
       ref  : "origin/master",
       repo : "https://github.com/kelvv/my-site.git",
       path : "/root",
-      "post-deploy" : "npm install ; pm2 startOrRestart ecosystem.json --env dev"
+      "post-deploy" : "ls"
     }
   }
 }
