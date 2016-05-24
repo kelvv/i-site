@@ -1,4 +1,6 @@
 #! /bin/bash
-. /root/.bashrc
+
+cp -r /root/config ./
+
 npm install 
 pm2 startOrRestart ecosystem.json
