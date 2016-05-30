@@ -54,6 +54,7 @@
     "browser-sync": "^2.12.8",
     "gulp-nodemon": "^2.0.7",
     "livereload": "^0.4.1",
+    "newrelic": "^1.28.0",
     "nodemon": "^1.8.1"
   }
 }

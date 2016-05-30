@@ -10,6 +10,8 @@ const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
 
+require('newrelic');
+
 // middlewares
 app.use(convert(bodyparser));
 app.use(convert(json()));
