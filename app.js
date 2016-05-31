@@ -10,7 +10,7 @@ const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
 
-require('newrelic');
+require('oneapm');
 
 // middlewares
 app.use(convert(bodyparser));
