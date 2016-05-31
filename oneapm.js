@@ -12,7 +12,7 @@ exports.config = {
   /**
    * Your OneAPM license key.
    */
-  license_key : 'CVAHDFQDCFA1f28DGFhACVgfWEb09dQKXhRQAAhRH1465AQPGFQEHwQAe436VwcVUggUVQY',
+  license_key : 'CVAHDFQDCFA1f28DGFhACVgfWEb09dQKXhRQAAhRH1465AQPGFQEHwQAe436VwcVUggUVQY=',
   logging : {
     /**
      * Level at which to log. 'trace' is most useful to OneAPM when diagnosing
