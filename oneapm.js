@@ -8,11 +8,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['exampleApp'],
+  app_name : ['my-site'],
   /**
    * Your OneAPM license key.
    */
-  license_key : 'license key here',
+  license_key : 'CVAHDFQDCFA1f28DGFhACVgfWEb09dQKXhRQAAhRH1465AQPGFQEHwQAe436VwcVUggUVQY',
   logging : {
     /**
      * Level at which to log. 'trace' is most useful to OneAPM when diagnosing
