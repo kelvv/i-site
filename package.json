@@ -5,7 +5,8 @@
   "scripts": {
     "start": " ./node_modules/.bin/nodemon bin/run.js",
     "reload": "./node_modules/.bin/gulp browser-sync",
-    "pm2": "pm2 start bin/run "
+    "pm2": "pm2 start bin/run ",
+    
   },
   "dependencies": {
     "better-console": "^0.2.4",
