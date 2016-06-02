@@ -11,8 +11,8 @@ const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
-let version = (process.env.EVN_TYPE || 'develop').toLowerCase();
-if(version !== 'develop'){
+let version = (process.env.NODE_ENV || 'develop').toLowerCase();
+if(version === 'production'){
   require('oneapm');
 }
 

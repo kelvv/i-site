@@ -21,14 +21,29 @@
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy : {
-    dev : {
+    staging : {
       user : "root",
       host : "133.130.96.233",
       port : "3000",
       ref  : "origin/master",
       repo : "https://github.com/kelvv/my-site.git",
-      path : "/root",
-      "post-deploy" : ". ./post-init.sh"
+      path : "/var/www/my-site/production",
+      "post-deploy" : ". ./post-init.sh",
+      "env"  : {
+        "NODE_ENV": "staging"
+      }
+    }
+    production : {
+      user : "root",
+      host : "133.130.96.233",
+      port : "3000",
+      ref  : "origin/master",
+      repo : "https://github.com/kelvv/my-site.git",
+      path : "/var/www/my-site/development",
+      "post-deploy" : ". ./post-init.sh",
+      "env"  : {
+        "NODE_ENV": "production"
+      }
     }
   }
 }
