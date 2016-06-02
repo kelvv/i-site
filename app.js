@@ -1,3 +1,5 @@
+"use strict"
+
 const Koa = require('koa');
 const app = new Koa();
 const router = require('koa-router')();
@@ -9,8 +11,10 @@ const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')();
 const logger = require('koa-logger');
 
-
-require('oneapm');
+let version = (process.env.NODE_VERSION || 'develop').toLowerCase();
+if(version !== 'develop'){
+  require('oneapm');
+}
 
 // middlewares
 app.use(convert(bodyparser));
