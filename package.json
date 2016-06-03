@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": " ./node_modules/.bin/nodemon bin/run.js -d",
-    "reload": "./node_modules/.bin/gulp browser-sync",
-    "pm2": "pm2 start bin/run.js "
+    "start": "pm2 start bin/run.js"
   },
   "dependencies": {
     "better-console": "^0.2.4",
