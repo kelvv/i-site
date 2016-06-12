@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "pm2 start bin/run.js"
+    "start": "pm2 start bin/run.js --watch"
   },
   "dependencies": {
     "better-console": "^0.2.4",
