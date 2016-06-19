@@ -3,7 +3,7 @@
     "url": "https://github.com/kelvv/my-site",
     "localdir": "/var/www/my-site",
     "branch": "master",
-	"port" : "3101",
+    "port" : "3101",
     "rules": [
         {
             "type" : "commit",
