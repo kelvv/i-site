@@ -5,5 +5,9 @@
     "branch": "master",
 	"port" : "3101",
     "rules": [
+        {
+            "type" : "commit",
+            "value" : "[\\s\\S]+"
+        }
     ]
 }
