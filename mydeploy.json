@@ -1,5 +1,0 @@
-{
-    "mode": "webhook",
-    "url": "https://github.com/kelvv/my-site.git",
-    "localdir": "/var/www/my-site"
-}
